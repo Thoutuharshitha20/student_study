@@ -46,22 +46,11 @@ def generate_with_gemma(prompt_text):
 
 
 # Home page
+
 @app.get("/", response_class=HTMLResponse)
 def home():
-    return """
-    <html>
-    <head>
-        <title>Student Study Assistant</title>
-    </head>
-    <body style="font-family:Arial;text-align:center;padding:50px">
-        <h1>Student Study Assistant</h1>
-        <p>Your AI learning assistant powered by LangChain and Gemma.</p>
-        <a href="/agent/playground/">Open AI Assistant</a>
-        <br><br>
-        <a href="/docs">API Documentation</a>
-    </body>
-    </html>
-    """
+    return playground()
+
 
 
 # Health check
