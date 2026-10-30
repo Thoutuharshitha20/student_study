@@ -173,9 +173,7 @@ def playground():
 
             <div id="result"></div>
 
-            <div class="links">
-                <a href="/docs">API Documentation</a>
-            </div>
+            
 
         </div>
 
